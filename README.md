@@ -18,7 +18,7 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
-* View your fine, fine handiwork.
+* Contemplate your fine, fine handiwork.
 
 ## Running / Development
 
