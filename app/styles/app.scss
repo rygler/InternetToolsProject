@@ -30,6 +30,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.ui-resizable-se {
+  bottom: 13px;
+  right: 2px;
+}
+
 .footer-distributed {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -174,7 +179,6 @@ a:hover {
   margin-right: 3px;
   margin-bottom: 5px;
 }
-
 
 @media (max-width: 880px) {
 
