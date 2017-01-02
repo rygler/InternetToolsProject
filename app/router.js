@@ -7,6 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('mars-weather', function() {
+    this.route('detail');
+  });
+  this.route('sorting');
+  this.route('coffee');
+  this.route('stuff');
 });
 
 export default Router;

@@ -14,5 +14,5 @@ App = Ember.Application.extend({
 });
 
 loadInitializers(App, config.modulePrefix);
-
+Ember.Inflector.inflector.rules.uncountable['record'] = true;
 export default App;
