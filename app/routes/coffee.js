@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return Ember.RSVP.hash({
-      coffee: this.store.createRecord('coffee')
-    });
-  }
+  // model() {
+  //   return Ember.RSVP.hash({
+  //     coffee: this.store.createRecord('coffee')
+  //   });
+  // }
 
 });

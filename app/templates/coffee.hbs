@@ -1,39 +1,63 @@
 <h1>Coffee Order</h1>
 <form {{action "create" on="submit"}}>
   <div class="form-group">
-    <label for="name">Your Order</label>
-    {{input value=model.name
-            type="text" class="form-control" name="name" required="true"}}
+    <label for="coffeeOrder">Coffee Order</label>
+    <input class="form-control" name="coffee" id="coffeeOrder" placeholder="Your Order" autofocus required>
   </div>
   <div class="form-group">
-    <label for="email">Your Email Address</label>
-    {{input value=model.email
-            type="email" class="form-control" name="email" required="true"}}
+    <label for="emailInput">Email</label>
+    <input class="form-control" type="email" name="emailAddress" id="emailInput" value=""
+           placeholder="Your Email Address" required>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="size" value="short">
+      Short
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="size" value="tall" checked>
+      Tall
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="size" value="grande">
+      Grande
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="size" value="coffee-zilla">
+      Coffee-zilla
+    </label>
   </div>
   <div class="form-group">
-    <label for="size">Size</label>
-    {{#x-select value=model.size class="form-control"}}
-      {{#x-option}}Select Size{{/x-option}}
-      {{#x-option value='short'}}Short{{/x-option}}
-      {{#x-option value='tall'}}Tall{{/x-option}}
-      {{#x-option value='grande'}}Grande{{/x-option}}
-      {{#x-option value='coffee-zilla'}}Coffee-zilla{{/x-option}}
-    {{/x-select}}
+    <label for="flavorShot">Flavor Shot</label>
+    <select id="flavorShot" class="form-control" name="flavor">
+      <option value="">None</option>
+      <option value="caramel">Caramel</option>
+      <option value="almond">Almond</option>
+      <option value="mocha">Mocha</option>
+      <option value="vanilla">Vanilla</option>
+    </select>
   </div>
   <div class="form-group">
-    <label for="flavor">Flavor Shot</label>
-    {{#x-select value=model.size class="form-control"}}
-      {{#x-option}}No Flavor{{/x-option}}
-      {{#x-option value='caramel'}}Caramel{{/x-option}}
-      {{#x-option value='almond'}}Almond{{/x-option}}
-      {{#x-option value='mocha'}}Mocha{{/x-option}}
-      {{#x-option value='vanilla'}}Vanilla{{/x-option}}
-    {{/x-select}}
+    <label for="strengthLevel">Caffeine Rating</label>
+    <input name="strength" id="strengthLevel" type="range" value="30">
   </div>
+
   <div class="form-group">
     <label for="quantity">Quantity</label>
-    {{input value=model.quantity
-            type="number" class="form-control" name="quantity" required="true"}}
+    <input name="quantity" id="quantity" type="number" value="0">
+  </div>
+
+
+  <div class="form-group">
+    <label for="comment">Comment:</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+    {{jqui-resizable}}
   </div>
 
   <button type="submit" class="btn btn-primary btn-block">Submit</button>
