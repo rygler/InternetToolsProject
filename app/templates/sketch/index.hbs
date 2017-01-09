@@ -1,0 +1,9 @@
+<h1>Sketches:</h1>
+{{#each model.sketches as |sketch|}}
+  {{#link-to 'sketch.sketch-detail' sketch.id}}
+    <div class="">
+      <li>{{sketch.title}}</li>
+      <br>
+    </div>
+  {{/link-to}}
+{{/each}}

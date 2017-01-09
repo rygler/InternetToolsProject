@@ -1,0 +1,11 @@
+{
+  "sketches": [
+    {
+      "id": 0,
+      "title": "Bubbles",
+      "sketchFile": "/assets/bubble-sketch.js",
+      "sketchRemove": "bubbleSketch.remove()"
+    }
+  ]
+}
+

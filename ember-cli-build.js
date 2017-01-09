@@ -48,7 +48,6 @@ module.exports = function (defaults) {
   });
   app.import('bower_components/unslider/dist/js/unslider-min.js');
   app.import('bower_components/unslider/dist/css/unslider.css');
-  app.import('bower_components/p5.js/lib/p5.js');
   app.import('bower_components/gameoflife/dist/gameoflife.min.js');
 
   return app.toTree();

@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   coffee: Ember.computed.alias('controller.model.coffee'),
   actions: {
     willTransition() {
-      var coffee = this.get('controller.model.coffe');
+      var coffee = this.get('controller.model.coffee');
       coffee.deleteRecord();
     },
     create() {

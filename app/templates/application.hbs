@@ -29,7 +29,7 @@
             {{#link-to 'coffee'}}Coffee{{/link-to}}
           </li>
           <li>
-            {{#link-to 'stuff'}}Stuff{{/link-to}}
+            {{#link-to 'sketch'}}Sketches{{/link-to}}
           </li>
           <li>
             {{#link-to 'board'}}Game of Life{{/link-to}}
@@ -57,15 +57,15 @@
     <h3>Strange Moments<span>{{fa-icon "space-shuttle"}}</span></h3>
 
     <p class="footer-links">
-      <a href="#">Home</a>
+      <a class="link" href="#">Home</a>
       ·
-      <a href="#">Blog</a>
+      <a class="link" href="#">Blog</a>
       ·
-      <a href="#">Pricing</a>
+      <a class="link" href="#">Pricing</a>
       ·
-      <a href="#" id="about">About</a>
+      <a class="link" href="#" id="about">About</a>
       ·
-      <a href="#" {{action "toggleModal"}}>Faq</a>
+      <a class="link" href="#" {{action "toggleModal"}}>Faq</a>
       {{#if isShowingModal}}
         {{#modal-dialog close="toggleModal"
                         targetAttachment="center"
@@ -87,7 +87,7 @@
         {{/modal-dialog}}
       {{/if}}
       ·
-      <a href="#">Contact</a>
+      <a class="link" href="#">Contact</a>
     </p>
 
     <p class="footer-company-name">Strange Moments &copy; 2016</p>

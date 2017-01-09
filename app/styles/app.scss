@@ -2,9 +2,9 @@
 // bootstrap variable overrides
 // ----------------------------
 
-//a:hover {
-//  background-color: mediumpurple;
-//}
+.link:hover {
+  background-color: #5bc0de;
+}
 
 @font-face {
   font-family: 'airstreamregular';
@@ -97,21 +97,21 @@ img {
   margin: 0 auto;
 }
 
-.life-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 35px;
-  height: 0;
-  overflow: hidden;
-}
-
-.life-container canvas{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+//.life-container {
+//  position: relative;
+//  padding-bottom: 56.25%;
+//  padding-top: 35px;
+//  height: 0;
+//  overflow: hidden;
+//}
+//
+//.life-container canvas{
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//}
 
 .video-container {
   position: relative;
@@ -119,6 +119,14 @@ img {
   padding-top: 35px;
   height: 0;
   overflow: hidden;
+}
+
+.video-container #sketcheroo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-container iframe {

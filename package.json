@@ -41,7 +41,9 @@
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-cli-unslider": "0.3.0",
+    "ember-computed-decorators": "latest",
     "ember-data": "^2.7.0",
+    "ember-disable-proxy-controllers": "1.0.1",
     "ember-export-application-global": "^1.0.5",
     "ember-font-awesome": "2.2.0",
     "ember-g-map": "0.0.23",
@@ -53,7 +55,9 @@
     "ember-rickroll": "1.0.2",
     "ember-youtube": "0.8.0-beta.0",
     "emberx-select": "3.0.0",
-    "loader.js": "^4.0.1",
-    "ember-computed-decorators": "latest"
+    "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "ember-inflector": "^1.10.0"
   }
 }

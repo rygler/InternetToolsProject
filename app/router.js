@@ -15,6 +15,9 @@ Router.map(function() {
   this.route('stuff');
   this.route('map');
   this.route('board');
+  this.route('sketch', function() {
+    this.route('sketch-detail', {path: '/sketch-detail/:sketch_id'});
+  });
 });
 
 export default Router;

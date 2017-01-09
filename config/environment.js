@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'strangeness',
     environment: environment,
-    rootURL: '/',
+    baseURL: '/',
     defaultLocationType: 'auto',
     EmberENV: {
       FEATURES: {
