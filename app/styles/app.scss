@@ -2,12 +2,74 @@
 // bootstrap variable overrides
 // ----------------------------
 
-a:hover {
-  background-color: mediumpurple;
+//a:hover {
+//  background-color: mediumpurple;
+//}
+
+@font-face {
+  font-family: 'airstreamregular';
+  src: url('assets/fonts/Airstream-webfont.eot');
+  src: url('assets/fonts/Airstream-webfont.eot?iefix') format('embedded-opentype'), url('fonts/Airstream-webfont.woff') format('woff'), url('fonts/Airstream-webfont.ttf') format('truetype'), url('fonts/Airstream-webfont.svg?airstreamregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lakeshore';
+  src: url('assets/fonts/LAKESHOR-webfont.eot');
+  src: url('assets/fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/LAKESHOR-webfont.woff') format('woff'), url('fonts/LAKESHOR-webfont.ttf') format('truetype'), url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.row {
+  clear: both;
+}
+
+.cell {
+  height: 10px;
+  width: 10px;
+  border: 1px solid gray;
+  float: left;
+}
+
+.alive {
+  background-color: black;
+}
+
+#otter-caption {
+  color: #cdc0dd;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: airstreamregular;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+  font-size: 24px;
+}
+
+#otter-name {
+  color: #cf96db;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lakeshore;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+  font-size: 37px;
 }
 
 .navbar {
   padding: 2px;
+}
+
+.leaflet-container {
+  height: 500px;
+  width: 100%;
+}
+
+//#map-jumbotron{
+//  height: 100%;
+//}
+
+#mars-image {
+  content: url("https://www.nasa.gov/sites/default/files/thumbnails/image/yir2014-maven.jpg");
 }
 
 .media-object {
@@ -18,6 +80,15 @@ a:hover {
   margin: 0 auto;
 }
 
+img {
+  margin: 0 auto;
+}
+
+//#bubble .media-well{
+//  background-color: black;
+//  color: #000;
+//}
+
 #external-image {
   background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/yir2014-maven.jpg");
 }
@@ -26,9 +97,42 @@ a:hover {
   margin: 0 auto;
 }
 
-.iframe {
-  margin: 0 auto;
+.life-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
 }
+
+.life-container canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//
+//.iframe {
+//  margin: 0 auto;
+//}
 
 .ui-resizable-se {
   bottom: 13px;
@@ -203,3 +307,5 @@ a:hover {
 
 // end bootstrap variable overrides
 @import 'bootstrap';
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";

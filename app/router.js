@@ -13,6 +13,8 @@ Router.map(function() {
   this.route('sorting');
   this.route('coffee');
   this.route('stuff');
+  this.route('map');
+  this.route('board');
 });
 
 export default Router;

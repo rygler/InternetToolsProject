@@ -20,7 +20,7 @@
             <a href="#">Home</a>
           </li>
           <li>
-            {{#link-to 'mars-weather'}}Mars Weather{{/link-to}}
+            {{#link-to 'mars-weather'}}Mars Satellite{{/link-to}}
           </li>
           <li>
             {{#link-to 'sorting'}}Sorting{{/link-to}}
@@ -30,6 +30,9 @@
           </li>
           <li>
             {{#link-to 'stuff'}}Stuff{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'board'}}Game of Life{{/link-to}}
           </li>
         </ul>
       </div>
@@ -62,7 +65,27 @@
       ·
       <a href="#" id="about">About</a>
       ·
-      <a href="#">Faq</a>
+      <a href="#" {{action "toggleModal"}}>Faq</a>
+      {{#if isShowingModal}}
+        {{#modal-dialog close="toggleModal"
+                        targetAttachment="center"
+                        translucentOverlay=true}}
+          {{#jqui-accordion}}
+            <h3>What is this site?</h3>
+            <div>
+              <p>
+                This is a place for all the things.
+              </p>
+            </div>
+            <h3>What is the Answer to the Ultimate Question of Life, the Universe, and Everything?</h3>
+            <div>
+              <p>
+                hehe. 42.
+              </p>
+            </div>
+          {{/jqui-accordion}}
+        {{/modal-dialog}}
+      {{/if}}
       ·
       <a href="#">Contact</a>
     </p>
@@ -72,10 +95,11 @@
 
   <div class="footer-center">
 
-    <div>
+
+    {{#link-to 'map'}}
       {{fa-icon "map-marker"}}
       <p><span>75-31 150th Street</span> Kew Gardens Hills, NY, USA</p>
-    </div>
+    {{/link-to}}
 
     <div>
       {{fa-icon "phone"}}

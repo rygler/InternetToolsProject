@@ -24,6 +24,17 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['g-map'] = {
+    exclude: true,
+    key: 'AIzaSyB3Ywmv_ySSI7vu5lRfO09PpujNqkVMl8g',
+    version: '3.26',
+    protocol: 'https'
+  };
+
+  ENV['ember-cli-map'] = {
+    googleApiKey: 'AIzaSyB3Ywmv_ySSI7vu5lRfO09PpujNqkVMl8g'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     ENV.APP.LOG_ACTIVE_GENERATION = true;

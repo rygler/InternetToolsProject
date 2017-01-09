@@ -5,7 +5,9 @@ export default DS.Model.extend({
   email: DS.attr('string'),
   size: DS.attr('string'),
   flavor: DS.attr('string'),
-  quantity: DS.attr('number')
+  quantity: DS.attr('number'),
+  comment: DS.attr('string'),
+  date: DS.attr('string')
   // fullOrder: Ember.computed('name', 'email', 'size', 'flavor', function () {
   //   return 'Order: ' + this.get('name') + ', Email: ' + this.get('email') + ', Size: ' + this.get('size') + ', Flavor:' + this.get('flavor') + '.';
   // })

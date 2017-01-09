@@ -1,5 +1,12 @@
 <div class="row">
   <div class="col-xs-12 colsm-3 text-center">
-    {{#image-item imagePath=model.url name=model.name}}{{/image-item}}
+    <div class="media-well">
+      <img class="media-object thumbnail" id="mars-image" alt="{{model.name}}"
+           width="100%" height="100%">
+      <div class="caption">
+        <h3>{{model.name}}</h3>
+      </div>
+    </div>
+
   </div>
 </div>

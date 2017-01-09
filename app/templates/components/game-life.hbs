@@ -1,0 +1,51 @@
+<div class="jumbotron">
+  <div class="media-well">
+    <div class="life-container">
+      <canvas id="gameoflife_canvas"></canvas>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      Controls:
+      <button {{action 'start'}} class="btn btn-primary" role="button">
+        <span class="glyphicon glyphicon-play"></span> Start
+      </button>
+      <button {{action 'stop'}} class="btn btn-primary" role="button">
+        <span class="glyphicon glyphicon-stop"></span> Stop
+      </button>
+      <button {{action 'step'}} class="btn btn-primary" role="button">
+        <span class="glyphicon glyphicon-step-forward"></span> Step
+      </button>
+      <button {{action 'reset'}} class="btn btn-primary" role="button">
+        <span class="glyphicon glyphicon-remove"></span> Reset
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      &nbsp;
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      Patterns:
+      <button {{action 'blinker'}} class="btn btn-info" role="button">
+        Blinker
+      </button>
+      <button {{action 'glider'}} class="btn btn-info" role="button">
+        Glider
+      </button>
+      <button {{action 'pentadecathlon'}} class="btn btn-info" role="button">
+        Pentadecathlon
+      </button>
+      <button {{action 'gostersGliderGun'}} class="btn btn-info" role="button">
+        Gosper's glider gun
+      </button>
+      <button {{action 'acorn'}} class="btn btn-info" role="button">
+        Acorn
+      </button>
+    </div>
+  </div>
+</div>

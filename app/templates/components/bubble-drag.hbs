@@ -1,0 +1,6 @@
+<div class="jumbotron">
+  {{yield}}
+  {{#un-slider fluid=true slides=model as |slide|}}
+    <img src="{{slide.photoURL}}"/>
+  {{/un-slider}}
+</div>
