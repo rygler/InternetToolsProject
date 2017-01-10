@@ -5,6 +5,12 @@
       "title": "Bubbles",
       "sketchFile": "/assets/bubble-sketch.js",
       "sketchRemove": "bubbleSketch.remove()"
+    },
+    {
+      "id": 1,
+      "title": "Bla",
+      "sketchFile": "/assets/bla.js",
+      "sketchRemove": "blaSketch.remove()"
     }
   ]
 }

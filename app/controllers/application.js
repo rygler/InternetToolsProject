@@ -13,7 +13,6 @@ export default Ember.Controller.extend({
     },
     toggleModal: function () {
       this.toggleProperty('isShowingModal');
-
     }
   }
 });
