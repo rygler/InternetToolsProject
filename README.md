@@ -23,7 +23,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200). (Assuming there is no other Ember server running currently.)
+* Visit your app at [http://localhost:4200](http://localhost:4200). (Assuming there is no other Ember server running currently. Check the terminal for the exact port number.)
 
 ### Code Generators
 
