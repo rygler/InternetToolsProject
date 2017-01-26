@@ -1,6 +1,6 @@
 # Strangeness
 
-This is my project for Internet Tools and Web Design. Hopefully this will let me check off all the boxes of the project requirements.
+This is my project for Internet Tools and Web Design.
 
 ## Prerequisites
 
